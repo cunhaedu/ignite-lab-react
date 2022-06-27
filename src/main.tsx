@@ -4,6 +4,8 @@ import App from './App';
 
 import './styles/global.css';
 
+import '@vime/core/themes/default.css';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />

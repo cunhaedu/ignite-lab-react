@@ -1,6 +1,15 @@
+import { ApolloProvider } from '@apollo/client';
+import { BrowserRouter } from 'react-router-dom';
+import { client } from './lib/apollo';
+import { Router } from './routes';
+
 function App() {
   return (
-    <h1 className='text-lg font-bold'>Hello World</h1>
+    <ApolloProvider client={client}>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </ApolloProvider>
   )
 }
 
